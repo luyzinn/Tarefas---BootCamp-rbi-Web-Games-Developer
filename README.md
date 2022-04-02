@@ -9,7 +9,7 @@ Tarefas relacionadas ao bootcamp da DIO - Órbi Web Games Developer
 
 *1) Criar chave SSH no GitBash*
 
-$ ssh-keygen -t ed25519 -C “seu email aqui“
+$ ssh-keygen -t ed25519 -C "seu email aqui"
 
 *2) Gerar chave para Github*
 
@@ -23,16 +23,25 @@ Entrar na área de configuraçoes .. segurança e criar uma nova chave SSH
 
 *4) Validar no GitBash*
 
-Ativar agente = $ eval $(ssh-agent -s)
+Ativar agente = $ eval $(ssh-agent -s)<b>
 Adicionar ao agente = $ ssh-add id_... (sem ser a .pub)
 
 *Comando para verificar se o email e nickname estao associado ao Github:*
 
 Git config --list (Verificar nome e nickname)
 
-Para resetar a configuraçao: Git config --global --unset user.email
+Para resetar a configuraçao: Git config --global --unset user.email<b>
                              Git config --global --unset user.nickname
 
-Para associar novamente: Git config --global user.email “seu email do Github”
-                         Git config --global user.nickname “Seu nick no Github ”
+Para associar novamente: Git config --global user.email "seu email do Github"<b> 
+                         Git config --global user.nickname "Seu nick no Github"
+
+## ***Comandos mais usados no Git/Gitub***
+
+git status - Verificar status da pasta e arquivos
+git add . - adicionar o repositorio local 
+git commit -m " " - Escrevar um commit ou comentário sobre a versao a ser adicionada
+git push origin main - Fazer push e enviar arquivos para o github
+
+
 
